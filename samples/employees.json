@@ -1,0 +1,57 @@
+[
+  {
+    "employee_id": "E10021",
+    "first_name": "Marisol", "last_name": "Okafor-Reyes",
+    "job_title": "Senior Software Engineer", "department": "Platform Engineering",
+    "work_location": "Columbus, OH", "employment_type": "Full-time", "employment_status": "Active",
+    "hire_date": "2021-03-08", "termination_date": null,
+    "annual_salary": 142500, "comp_disclosure_consent": true,
+    "background_check_status": "Cleared", "background_check_date": "2021-02-19", "background_check_vendor": "ClearPath Screening",
+    "ssn_last4": "4417", "date_of_birth": "1988-11-02", "home_address": "1490 Larkspur Ct, Dublin, OH 43017",
+    "manager_name": "Devin Halloran"
+  },
+  {
+    "employee_id": "E10077",
+    "first_name": "Tomas", "last_name": "Lindqvist",
+    "job_title": "Customer Support Specialist", "department": "Customer Success",
+    "work_location": "Raleigh, NC", "employment_type": "Part-time", "employment_status": "Active",
+    "hire_date": "2024-06-17", "termination_date": null,
+    "annual_salary": 38400, "comp_disclosure_consent": false,
+    "background_check_status": "Cleared", "background_check_date": "2024-06-03", "background_check_vendor": "Veritas Backgrounds",
+    "ssn_last4": "9082", "date_of_birth": "1999-04-27", "home_address": "2210 Hillsborough St Apt 5, Raleigh, NC 27607",
+    "manager_name": "Marisol Okafor-Reyes"
+  },
+  {
+    "employee_id": "E10103",
+    "first_name": "Priya", "last_name": "Venkataraman",
+    "job_title": "Payroll Specialist", "department": "Finance",
+    "work_location": "Denver, CO", "employment_type": "Full-time", "employment_status": "Terminated",
+    "hire_date": "2019-09-23", "termination_date": "2025-12-12",
+    "annual_salary": 64000, "comp_disclosure_consent": true,
+    "background_check_status": "Cleared", "background_check_date": "2019-09-10", "background_check_vendor": "ClearPath Screening",
+    "ssn_last4": "1136", "date_of_birth": "1992-07-15", "home_address": "880 Wewatta St Unit 12, Denver, CO 80202",
+    "manager_name": "Devin Halloran"
+  },
+  {
+    "employee_id": "E10150",
+    "first_name": "Andre", "last_name": "Castellanos",
+    "job_title": "Field Service Technician", "department": "Operations",
+    "work_location": "Austin, TX", "employment_type": "Full-time", "employment_status": "Active",
+    "hire_date": "2026-08-31", "termination_date": null,
+    "annual_salary": 56800, "comp_disclosure_consent": false,
+    "background_check_status": "Pending", "background_check_date": null, "background_check_vendor": "Veritas Backgrounds",
+    "ssn_last4": "7720", "date_of_birth": "2001-01-30", "home_address": "3301 S Lamar Blvd, Austin, TX 78704",
+    "manager_name": "Marisol Okafor-Reyes"
+  },
+  {
+    "employee_id": "E10188",
+    "first_name": "Helen", "last_name": "Adeyemi",
+    "job_title": "Director of Engineering", "department": "Platform Engineering",
+    "work_location": "Portland, OR", "employment_type": "Full-time", "employment_status": "Leave",
+    "hire_date": "2017-01-09", "termination_date": null,
+    "background_check_status": "Cleared", "background_check_date": "2016-12-20", "background_check_vendor": "ClearPath Screening",
+    "annual_salary": 198000, "comp_disclosure_consent": true,
+    "ssn_last4": "3305", "date_of_birth": "1983-05-19", "home_address": "515 NW Everett St, Portland, OR 97209",
+    "manager_name": "Corinne Mbeki"
+  }
+]

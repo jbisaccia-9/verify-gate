@@ -1,0 +1,22 @@
+name: ci
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -e ".[dev]"
+      - run: pytest -q
+      # Happy path: every seed employee, both letter types, template drafter (no secrets in CI).
+      - run: python -m verifygate demo --out out/packets --drafter template --letter-date "September 15, 2026"
+      - run: python -m verifygate check-dir out/packets
+      # Full lifecycle on the Monday.com sample: send must refuse before approval and succeed after.
+      - run: python -m verifygate prepare samples/monday_webhook.json --drafter template --letter-date "September 15, 2026"
+      - run: "! python -m verifygate send req-55b477a426 --dry-run"
+      - run: python -m verifygate approve req-55b477a426 --reviewer "CI Reviewer"
+      - run: python -m verifygate send req-55b477a426 --dry-run
+      # The refusal is the assertion: every counterexample MUST fail, each for its own rule.
+      - run: python -m verifygate counterexamples out/counterexamples
+      - run: "! python -m verifygate check-dir out/counterexamples"

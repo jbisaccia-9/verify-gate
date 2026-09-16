@@ -1,0 +1,4 @@
+python-docx
+reportlab
+pypdf
+pytest

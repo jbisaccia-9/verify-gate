@@ -1,0 +1,20 @@
+{
+  "event": {
+    "app": "monday",
+    "type": "update_column_value",
+    "triggerTime": "2026-09-14T16:02:11.000Z",
+    "boardId": 8123400561,
+    "pulseId": 9911002233,
+    "pulseName": "Verification - E10021",
+    "columnId": "status_letter_type",
+    "value": {"label": {"text": "Employment Verification"}},
+    "columnValues": {
+      "text_employee_id": {"text": "E10021"},
+      "status_letter_type": {"label": {"text": "Employment Verification"}},
+      "email_requester": {"email": "leasing@harborpointapts.example", "text": "leasing@harborpointapts.example"},
+      "text_requester_name": {"text": "Harbor Point Apartments - Leasing Office"},
+      "text_addressee": {"text": "Harbor Point Apartments"},
+      "checkbox_include_comp": {"checked": "true"}
+    }
+  }
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verify-gate"
+version = "0.1.0"
+description = "Monday.com -> HR warehouse -> AI-drafted verification letters, in Word and PDF - and the gate that refuses to email one until every fact traces to the warehouse and a human has signed the bytes"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Joseph Bisaccia"}]
+requires-python = ">=3.10"
+keywords = ["hr-automation", "monday-com", "human-in-the-loop", "docx", "pdf", "gate", "ci", "llm"]
+dependencies = ["python-docx", "reportlab", "pypdf"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+claude = ["anthropic"]
+
+[project.urls]
+Homepage = "https://getaiintegrations.com/projects"
+Repository = "https://github.com/jbisaccia-9/verify-gate"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
