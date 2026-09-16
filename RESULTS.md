@@ -8,7 +8,7 @@ Generated 2026-09-16 by `scripts/make_results.py` — every block below is captu
 
 ```
 .....................                                                    [100%]
-21 passed in 1.83s
+21 passed in 1.87s
 ```
 
 ## Happy path: every seed employee, both letter types
@@ -81,7 +81,7 @@ PASS  G2 facts       9 facts match the warehouse
 PASS  G3 disclosure  no forbidden fields, no unsourced dates or amounts
 PASS  G4 fidelity    .docx and .pdf carry the same letter
 PASS  G5 eligibility verification is permitted for this record
-PASS  G6 approval    approved by Dana Whitcombe at 2026-09-16T03:07:21+00:00
+PASS  G6 approval    approved by Dana Whitcombe at 2026-09-16T03:12:38+00:00
 VERIFY GATE: PASSED - req-55b477a426
 dry-run: wrote out/packets/req-55b477a426/sent.eml
 ```
@@ -101,7 +101,7 @@ built 6 counterexample packets -> out/counterexamples
 ```
 FAIL  g1-unknown-employee  <- G1 identity: employee_id E10999 does not resolve to one warehouse row
 FAIL  g2-hallucinated-hire-date  <- G2 facts: hire_date 'March 8, 2021' not stated in rendered text; G3 disclosure: unsourced date 'March 18, 2021'
-FAIL  g3-salary-without-consent  <- G3 disclosure: unsourced amount '$41,600.00'
+FAIL  g3-salary-without-consent  <- G3 disclosure: annual_salary present; annual_salary_bare present; unsourced amount '$38,400.00'
 FAIL  g4-stale-pdf  <- G4 fidelity: paragraph 3 not in .pdf
 FAIL  g5-attestation-pending-check  <- G5 eligibility: background check is Pending, not Cleared; no background check date on file
 FAIL  g6-edited-after-approval  <- G6 approval: .docx changed after approval; .pdf changed after approval

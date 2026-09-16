@@ -56,7 +56,7 @@ def build(root: Path, wh: Warehouse) -> list[str]:
     r = _req("E10077", "verification", comp=True, tag="3")
     pk, _ = prepare(r, wh, root, drafter="template", letter_date=FIXED_DATE)
     d = pk.draft()
-    d.paragraphs.insert(1, "Their current annual base salary is $41,600.00.")
+    d.paragraphs.insert(1, "Their current annual base salary is $38,400.00.")
     _rewrite(pk, d)
     made.append(r.request_id)
 
