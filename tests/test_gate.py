@@ -95,7 +95,7 @@ def test_g2_draft_that_echoes_correct_fact_but_writes_wrong_one(tmp_path, wh):
 def test_g2_draft_that_lies_in_the_facts_block(tmp_path, wh):
     pk, _ = packet(tmp_path, wh, req("E10021"))
     d = pk.draft()
-    d.facts["job_title"] = "Clinical Director"
+    d.facts["job_title"] = "Staff Engineer"
     v = check(pk.request(), wh, d, *pk.docs())
     assert any(f.rule == "G2 facts" and "job_title" in f.detail for f in v.fails())
 
